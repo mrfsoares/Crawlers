@@ -7,9 +7,9 @@ from bs4 import BeautifulSoup
 
 def trata_duplicatas(df):
     '''
-    Algumas informações estão vindo dupicadas por sequência de coleta devido
-    ao formado de sua disposição. Essa função é responsável por corrigir esse 
-    problema.
+    Algumas informações estão vindo duplicadas devido ao formado de sua
+    disposição em sua estrutura-base. Essa função é responsável por
+    corrigir esse problema.
     '''
     for num in df.index:
         if num % 2 != 0:
@@ -20,7 +20,7 @@ def trata_duplicatas(df):
 
 
 def BuscarDados(pages=2):
-    # Criando dataframes que receberão os valores
+    # Criando listas que receberão os valores
     links = []
     nomes = []
     preco = []
